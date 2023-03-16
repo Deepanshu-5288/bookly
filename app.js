@@ -16,7 +16,8 @@ app.use(
 
 
 import user from "./routes/userRoute.js";
+import hotel from "./routes/hotelsRoute.js";
 app.use("/api/v1", user);
-
+app.use("/api/v1", hotel);
 app.use(ErrorMiddleWare);
 export default app;
